@@ -39,7 +39,7 @@ Once completed, our tables should be structured as follows...
 Your task this evening is to read over the completed end\_code for tomorrow's lesson, understand it as much as possible, and answer the following questions.
 
 1) What is the relationship between customers and pizza\_orders?
-    Pizza_order db holds customers id 
+   one to many
 
 2) At what point is the id of a `PizzaOrder` created?
     At the moment of INSERTING new PizzaOrder to the db.
@@ -52,7 +52,7 @@ Your task this evening is to read over the completed end\_code for tomorrow's le
     2. To connect which pizza is for which customer in pizza_order db.
 
 5) Why might it be important to check if `options['id']` is `nil` in our `initialize` method before assigning `@id` the value of `options[‘id’].to_i?`
-    To check if id exists in db and is valid
+    To check if id exists in db and is valid not 0
 
 6) What are the responsibilities of `SqlRunner`?
     To create connection and to prepare data to be hendled by db and ruby files. 
